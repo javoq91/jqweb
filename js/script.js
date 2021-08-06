@@ -101,8 +101,6 @@ $(document).ready(function () {
 	});
 
 
-
-
 	// contact form
 	$('#contact-form').validate({
 		rules: {
