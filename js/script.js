@@ -135,9 +135,9 @@ $(document).ready(function () {
 		},
 		submitHandler: function (form) {
 			$(form).ajaxSubmit({
-				type: 'POST',
+				type: "POST",
 				data: $(form).serialize(),
-				url: 'sendmail.php',
+				url: "sendmail.php",
 				success: function () {
 					$('#contact-form #success').fadeIn();
 				},
