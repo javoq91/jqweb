@@ -1,7 +1,6 @@
 <?php
     //we need to get our variables first
-
-    $email_to =   'jotaqu91@gmail.com'; //the address to which the email will be sent
+    $email_to =   "jotaqu91@gmail.com"; //the address to which the email will be sent
     $name     =   $_POST['user_name'];
     $email    =   $_POST['user_email'];
     $subject  =   $_POST['user_subject'];
@@ -15,8 +14,8 @@
     $headers .= "Reply-To: $email\r\n";
 
     if(mail($email_to, $subject, $message, $headers)){
-        echo "<h4>Mensaje enviado"; //'sent'; // we are sending this text to the ajax request telling it that the mail is sent..
+        echo 'sent'; // we are sending this text to the ajax request telling it that the mail is sent..
     }else{
-        echo "<h4>Lo sentimos, el mensaje no fue enviado"; //'failed';// ... or this one to tell it that it wasn't sent
+        echo 'failed'; // ... or this one to tell it that it wasn't sent
     }
 ?>

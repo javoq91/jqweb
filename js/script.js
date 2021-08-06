@@ -103,7 +103,7 @@ $(document).ready(function () {
 
 
 
-	// contactr form
+	// contact form
 	$('#contact-form').validate({
 		rules: {
 			user_name: {
