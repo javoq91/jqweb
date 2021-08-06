@@ -15,8 +15,8 @@
     $headers .= "Reply-To: $email\r\n";
 
     if(mail($email_to, $subject, $message, $headers)){
-        echo 'sent'; // we are sending this text to the ajax request telling it that the mail is sent..
+        echo "<h4>Mensaje enviado"; //'sent'; // we are sending this text to the ajax request telling it that the mail is sent..
     }else{
-        echo 'failed';// ... or this one to tell it that it wasn't sent
+        echo "<h4>Lo sentimos, el mensaje no fue enviado"; //'failed';// ... or this one to tell it that it wasn't sent
     }
 ?>
