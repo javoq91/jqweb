@@ -121,21 +121,21 @@ $(document).ready(function () {
 		},
 		messages: {
 			user_name: {
-				required: 'Come on, you have a name don\'t you?',
-				minlength: 'Your name must consist of at least 2 characters'
+				required: 'Vamos, tienes un nombre ¿no?',
+				minlength: 'Tu nombre debe tener al menos 2 caracteres'
 			},
 			user_email: {
-				required: 'Please put your email address'
+				required: 'Por favor ingrese su dirección de correo electrónico'
 			},
 			user_message: {
-				required: 'Put some messages here?',
-				minlength: 'Your name must consist of at least 2 characters'
+				required: 'Favor ponga algunos mensajes aquí?',
+				minlength: 'Tu nombre debe tener al menos 2 caracteres'
 			}
 
 		},
 		submitHandler: function (form) {
 			$(form).ajaxSubmit({
-				type: "POST",
+				type: 'POST',
 				data: $(form).serialize(),
 				url: "sendmail.php",
 				success: function () {
