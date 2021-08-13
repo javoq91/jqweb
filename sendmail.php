@@ -1,10 +1,10 @@
 <?php
     //we need to get our variables first
     $email_to =   'jotaqu91@gmail.com'; //the address to which the email will be sent
-    $name     =   $_POST['user_name'];
-    $email    =   $_POST['user_email'];
-    $subject  =   $_POST['user_subject'];
-    $message  =   $_POST['user_message'];
+    $name     =   $_POST['name'];
+    $email    =   $_POST['email'];
+    $subject  =   $_POST['subject'];
+    $message  =   $_POST['message'];
 
     /*the $header variable is for the additional headers in the mail function,
      we are asigning 2 values, first one is FROM and the second one is REPLY-TO.
