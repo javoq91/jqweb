@@ -1,21 +1,21 @@
 <?php
-	$email_to =   'jotaqu91@gmail.com';
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$subject  =  $_POST['subject'];
-	$message = $_POST['message'];
+    //we need to get our variables first
+    $email_to =   'jotaqu91@gmail.com'; //the address to which the email will be sent
+    $name     =   $_POST['name'];
+    $email    =   $_POST['email'];
+    $subject  =   $_POST['subject'];
+    $message  =   $_POST['message'];
 
-	$header = 'From: ' . $mail . " \r\n";
-	$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
-	$header .= "Mime-Version: 1.0 \r\n";
-	$header .= "Content-Type: text/plain";
+    /*the $header variable is for the additional headers in the mail function,
+     we are asigning 2 values, first one is FROM and the second one is REPLY-TO.
+     That way when we want to reply the email gmail(or yahoo or hotmail...) will know
+     who are we replying to. */
+    $headers  = "From: $email\r\n";
+    $headers .= "Reply-To: $email\r\n";
 
-	$mensaje = "Este mensaje fue enviado por " . $nombre . ",\r\n";
-	$mensaje .= "Su e-mail es: " . $mail . " \r\n";
-	$mensaje .= "Mensaje: " . $_POST['message'] . " \r\n";
-	$mensaje .= "Enviado el " . date('d/m/Y', time());
-
-	mail($email_to, $subject, utf8_decode($mensaje), $header);
-
-	header("Location:index.html");
+    if(mail($email_to, $subject, $message, $headers)){
+        echo 'sent'; // we are sending this text to the ajax request telling it that the mail is sent..
+    }else{
+        echo 'failed'; // ... or this one to tell it that it wasn't sent
+    }
 ?>
