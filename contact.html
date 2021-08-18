@@ -6,7 +6,9 @@
 <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!--
   <meta name="description" content="Aviato E-Commerce Template">
+  -->
 
   <meta name="author" content="Themefisher.com">
 
@@ -110,27 +112,27 @@
 <section class="contact-form">
     <div class="container">
         <div class="row">
-            <form id="contact-form">
+            <form id="contact-form" method="post" action="sendmail.php">
                 <div class="col-md-6 col-sm-12">
                     <div class="block">
                         <div class="form-group">
-                            <input name="user_name" type="text" class="form-control" placeholder="Tu nombre">
+                            <input type="text" name="name" class="form-control" placeholder="Tu nombre">
                         </div>
                         <div class="form-group">
-                            <input name="user_email" type="text" class="form-control" placeholder="Dirección de correo electronico">
+                            <input type="email" name="email" class="form-control" placeholder="Dirección de correo electronico">
                         </div>
                         <div class="form-group">
-                            <input name="user_subject" type="text" class="form-control" placeholder="Asunto">
+                            <input type="text" name="subject" class="form-control" placeholder="Asunto">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <div class="block">
                         <div class="form-group-2">
-                            <textarea name="user_message" class="form-control" rows="4"
+                            <textarea name="message" class="form-control" rows="4"
                                 placeholder="Tu mensaje"></textarea>
                         </div>
-                        <button class="btn btn-default" type="submit">Enviar mensaje</button>
+                        <button type="submit" class="btn btn-default">Enviar mensaje</button>
                     </div>
                     <div class="error" id="error">Lo sentimos, el mensaje no fue enviado</div>
                     <div class="success" id="success">Mensaje enviado</div>
