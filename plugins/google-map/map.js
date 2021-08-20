@@ -5,7 +5,7 @@ function initialize() {
   var latitude = $('#map_canvas').attr('data-latitude');
   var longitude = $('#map_canvas').attr('data-longitude');
   var mapMarker = $('#map_canvas').attr('data-marker');
-  var nottingham = new google.maps.LatLng(-25.3123893, -57.5197016);
+  var nottingham = new google.maps.LatLng(latitude, longitude);
   var style = [{
       "featureType": "administrative",
       "elementType": "all",
@@ -140,7 +140,7 @@ function initialize() {
     position: nottingham,
     map: map,
     icon: pinIcon,
-    title: 'Airspace'
+    title: 'JQSystem'
   });
 }
 var map = document.getElementById('map_canvas');
