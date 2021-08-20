@@ -1,6 +1,7 @@
 window.marker = null;
 
-function initialize() {
+//function initialize() {
+function iniciarMap() {
   var map;
   var latitude = $('#map_canvas').attr('data-latitude');
   var longitude = $('#map_canvas').attr('data-longitude');
