@@ -8,16 +8,16 @@ function initialize() {
   var nottingham = new google.maps.LatLng(latitude, longitude);
   var style = [
     {
-        "featureType": "administrative",
+        "featureType": "all",
         "elementType": "all",
         "stylers": [
             {
-                "saturation": "-100"
+                "visibility": "on"
             }
         ]
     },
     {
-        "featureType": "administrative.province",
+        "featureType": "administrative",
         "elementType": "all",
         "stylers": [
             {
@@ -30,31 +30,7 @@ function initialize() {
         "elementType": "all",
         "stylers": [
             {
-                "saturation": -100
-            },
-            {
-                "lightness": 65
-            },
-            {
                 "visibility": "on"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "gamma": "2.70"
-            },
-            {
-                "hue": "#ff00e2"
-            },
-            {
-                "saturation": "19"
-            },
-            {
-                "lightness": "-10"
             }
         ]
     },
@@ -63,70 +39,40 @@ function initialize() {
         "elementType": "all",
         "stylers": [
             {
-                "saturation": "-100"
-            },
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
             {
-                "lightness": "50"
-            },
+                "color": "#62779b"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "labels",
+        "stylers": [
             {
                 "visibility": "simplified"
             }
         ]
     },
     {
-        "featureType": "road",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "saturation": "-100"
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "labels",
-        "stylers": [
-            {
-                "invert_lightness": true
-            },
-            {
-                "weight": "0.01"
-            },
-            {
-                "lightness": "8"
-            },
-            {
-                "saturation": "-100"
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "weight": "0.50"
-            },
-            {
-                "hue": "#ff0000"
-            },
-            {
-                "lightness": "-100"
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "labels.icon",
-        "stylers": [
-            {
-                "invert_lightness": true
-            }
-        ]
-    },
-    {
         "featureType": "road.highway",
-        "elementType": "labels.text.fill",
+        "elementType": "labels.text",
         "stylers": [
             {
                 "visibility": "on"
@@ -134,47 +80,26 @@ function initialize() {
         ]
     },
     {
-        "featureType": "road.arterial",
-        "elementType": "all",
+        "featureType": "road.highway",
+        "elementType": "labels.text.stroke",
         "stylers": [
             {
-                "lightness": "30"
-            }
-        ]
-    },
-    {
-        "featureType": "road.local",
-        "elementType": "all",
-        "stylers": [
-            {
-                "lightness": "40"
-            }
-        ]
-    },
-    {
-        "featureType": "transit",
-        "elementType": "all",
-        "stylers": [
-            {
-                "saturation": -100
+                "visibility": "on"
             },
+            {
+                "color": "#ffffff"
+            },
+            {
+                "weight": "4.00"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "labels.icon",
+        "stylers": [
             {
                 "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "hue": "#ffff00"
-            },
-            {
-                "lightness": -25
-            },
-            {
-                "saturation": -97
             }
         ]
     },
@@ -183,19 +108,7 @@ function initialize() {
         "elementType": "geometry.fill",
         "stylers": [
             {
-                "color": "#3f3861"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "labels",
-        "stylers": [
-            {
-                "lightness": "61"
-            },
-            {
-                "saturation": "-100"
+                "color": "#a2c9eb"
             }
         ]
     }
