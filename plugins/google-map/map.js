@@ -8,20 +8,20 @@ function initialize() {
   var nottingham = new google.maps.LatLng(latitude, longitude);
   var style = [
     {
-        "featureType": "all",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "on"
-            }
-        ]
-    },
-    {
         "featureType": "administrative",
         "elementType": "all",
         "stylers": [
             {
-                "visibility": "off"
+                "visibility": "on"
+            },
+            {
+                "hue": "#ff0000"
+            },
+            {
+                "weight": 0.4
+            },
+            {
+                "color": "#ffffff"
             }
         ]
     },
@@ -30,7 +30,13 @@ function initialize() {
         "elementType": "all",
         "stylers": [
             {
-                "visibility": "on"
+                "visibility": "simplified"
+            },
+            {
+                "color": "#2b3f57"
+            },
+            {
+                "weight": 0.1
             }
         ]
     },
@@ -39,7 +45,28 @@ function initialize() {
         "elementType": "all",
         "stylers": [
             {
+                "color": "#6c5b7b"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "labels",
+        "stylers": [
+            {
                 "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#f55f77"
+            },
+            {
+                "weight": 3
             }
         ]
     },
@@ -48,7 +75,7 @@ function initialize() {
         "elementType": "geometry.fill",
         "stylers": [
             {
-                "color": "#62779b"
+                "visibility": "off"
             }
         ]
     },
@@ -57,7 +84,10 @@ function initialize() {
         "elementType": "geometry.stroke",
         "stylers": [
             {
-                "visibility": "off"
+                "visibility": "on"
+            },
+            {
+                "weight": "0.50"
             }
         ]
     },
@@ -66,7 +96,13 @@ function initialize() {
         "elementType": "labels",
         "stylers": [
             {
-                "visibility": "simplified"
+                "weight": 0.8
+            },
+            {
+                "color": "#ffffff"
+            },
+            {
+                "visibility": "on"
             }
         ]
     },
@@ -75,40 +111,82 @@ function initialize() {
         "elementType": "labels.text",
         "stylers": [
             {
-                "visibility": "on"
+                "weight": 1.3
+            },
+            {
+                "color": "#FFFFFF"
             }
         ]
     },
     {
-        "featureType": "road.highway",
-        "elementType": "labels.text.stroke",
+        "featureType": "road.arterial",
+        "elementType": "geometry",
         "stylers": [
             {
-                "visibility": "on"
+                "color": "#f55f77"
             },
+            {
+                "weight": 1.1
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "labels",
+        "stylers": [
             {
                 "color": "#ffffff"
             },
             {
-                "weight": "4.00"
+                "weight": 0.7
             }
         ]
     },
     {
-        "featureType": "road.highway",
-        "elementType": "labels.icon",
+        "featureType": "road.local",
+        "elementType": "geometry",
         "stylers": [
             {
-                "visibility": "simplified"
+                "color": "#f55f77"
+            },
+            {
+                "weight": 0.4
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit.line",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
             }
         ]
     },
     {
         "featureType": "water",
-        "elementType": "geometry.fill",
+        "elementType": "all",
         "stylers": [
             {
-                "color": "#a2c9eb"
+                "color": "#f3b191"
             }
         ]
     }
