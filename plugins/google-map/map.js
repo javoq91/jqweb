@@ -15,16 +15,7 @@ function initialize() {
                 "color": "#000000"
             }
         ]
-    },
-    {
-        "featureType": "landscape",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#ff0000"
-            }
-        ]
-    },
+    }
     {
         "featureType": "landscape.natural",
         "elementType": "all",
