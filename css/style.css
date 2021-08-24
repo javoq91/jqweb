@@ -1729,8 +1729,7 @@ font header .navbar-default .navbar-nav li a:hover {
 
 .clients-logo img {
   width: auto !important;
-  /*padding: 20px;*/
-  padding: 30px;
+  padding: 20px;
 }
 
 .about .block h2 {
