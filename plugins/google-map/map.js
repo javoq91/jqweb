@@ -8,47 +8,20 @@ function initialize() {
   var nottingham = new google.maps.LatLng(latitude, longitude);
   var style = [
     {
-        "featureType": "all",
-        "elementType": "all",
+        "featureType": "administrative",
+        "elementType": "geometry",
         "stylers": [
             {
-                "saturation": -100
+                "weight": "0.6"
             },
             {
-                "gamma": 0.5
+                "color": "#1a3541"
             }
         ]
     },
     {
-        "featureType": "road.arterial",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#492468"
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "color": "#492468"
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#ffffff"
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "labels.text.stroke",
+        "featureType": "administrative",
+        "elementType": "labels.icon",
         "stylers": [
             {
                 "visibility": "off"
@@ -56,38 +29,74 @@ function initialize() {
         ]
     },
     {
-        "featureType": "road.local",
-        "elementType": "geometry.fill",
+        "featureType": "landscape",
+        "elementType": "geometry",
         "stylers": [
             {
-                "color": "#492468"
+                "color": "#faf4f4"
             }
         ]
     },
     {
-        "featureType": "road.local",
-        "elementType": "geometry.stroke",
+        "featureType": "poi",
+        "elementType": "geometry",
         "stylers": [
             {
-                "color": "#492468"
+                "color": "#000000"
             }
         ]
     },
     {
-        "featureType": "road.local",
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#c5e9db"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#406d80"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "labels.text",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#3e606f"
+            },
+            {
+                "gamma": "0.84"
+            },
+            {
+                "weight": "2.00"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
         "elementType": "labels.text.fill",
         "stylers": [
             {
-                "color": "#ffffff"
+                "color": "#08c2f9"
             }
         ]
     },
     {
-        "featureType": "road.local",
-        "elementType": "labels.text.stroke",
+        "featureType": "water",
+        "elementType": "geometry",
         "stylers": [
             {
-                "visibility": "off"
+                "color": "#193341"
             }
         ]
     }
