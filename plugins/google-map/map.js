@@ -35,13 +35,6 @@ function initialize() {
         ]
     },
     {
-      "featureType": "administrative",
-      "elementType": "all",
-      "stylers": [{
-        "saturation": "-100"
-      }]
-    },
-    {
         "featureType": "administrative.country",
         "elementType": "geometry.stroke",
         "stylers": [
