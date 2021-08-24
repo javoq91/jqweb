@@ -18,27 +18,6 @@ function initialize() {
     },
     {
         "featureType": "landscape",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "on"
-            },
-            {
-                "color": "#ebebeb"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#ebebeb"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape",
         "elementType": "labels.text.fill",
         "stylers": [
             {
