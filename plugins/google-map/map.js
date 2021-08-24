@@ -80,6 +80,20 @@ function initialize() {
         ]
     },
     {
+      "featureType": "landscape",
+      "elementType": "all",
+      "stylers": [{
+          "saturation": -100
+        },
+        {
+          "lightness": 65
+        },
+        {
+          "visibility": "on"
+        }
+      ]
+    },
+    {
         "featureType": "poi",
         "elementType": "geometry",
         "stylers": [
