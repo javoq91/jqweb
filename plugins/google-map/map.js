@@ -12,7 +12,7 @@ function initialize() {
         "elementType": "geometry",
         "stylers": [
             {
-                "color": "#8ba6b3"
+                "color": "#685b7c"
             }
         ]
     },
@@ -21,7 +21,7 @@ function initialize() {
         "elementType": "labels.text",
         "stylers": [
             {
-                "color": "#ffffff"
+                "color": "#a298b1"
             },
             {
                 "weight": "0.01"
