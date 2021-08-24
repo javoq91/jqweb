@@ -29,8 +29,8 @@ function initialize() {
             {
                 "visibility": "on"
             }
-      ]
-  }
+          ]
+    }
  ];
   var mapOptions = {
     center: nottingham,
