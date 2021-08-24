@@ -29,9 +29,9 @@ function initialize() {
             {
                 "visibility": "on"
             }
-          ]
+        ]
     }
- ];
+];
   var mapOptions = {
     center: nottingham,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
