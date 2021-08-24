@@ -145,8 +145,7 @@ function initialize() {
             }
         ]
     }
-];
-
+  ];
   var mapOptions = {
     center: nottingham,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
