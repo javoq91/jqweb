@@ -35,6 +35,13 @@ function initialize() {
         ]
     },
     {
+      "featureType": "administrative",
+      "elementType": "all",
+      "stylers": [{
+        "saturation": "-100"
+      }]
+    },
+    {
         "featureType": "administrative.country",
         "elementType": "geometry.stroke",
         "stylers": [
@@ -78,20 +85,6 @@ function initialize() {
                 "color": "#023e58"
             }
         ]
-    },
-    {
-      "featureType": "landscape",
-      "elementType": "all",
-      "stylers": [{
-          "saturation": -100
-        },
-        {
-          "lightness": 65
-        },
-        {
-          "visibility": "on"
-        }
-      ]
     },
     {
         "featureType": "poi",
