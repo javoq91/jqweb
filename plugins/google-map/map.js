@@ -12,7 +12,7 @@ function initialize() {
         "elementType": "geometry",
         "stylers": [
             {
-                "color": "#47397f"
+                "color": "#8ba6b3"
             }
         ]
     },
