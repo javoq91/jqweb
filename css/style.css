@@ -1,10 +1,12 @@
 /*=== MEDIA QUERY ===*/
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
-@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,500,600);
-@import url(https://fonts.googleapis.com/css?family=Volkhov:400italic);
+//@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
+//@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,500,600);
+//@import url(https://fonts.googleapis.com/css?family=Volkhov:400italic);
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Volkhov:ital@1&display=swap");
 
 body {
-  line-height: 1.5;
+  line-height: 1.65;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -2711,6 +2713,34 @@ font header .navbar-default .navbar-nav li a:hover {
 
 .footer .copyright a {
   font-weight: 600;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  height: 40px;
+  width: 40px;
+  background: #655E7A;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .scroll-to-top {
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+.scroll-to-top:hover {
+  background-color: #333;
 }
 
 /*# sourceMappingURL=maps/style.css.map */
