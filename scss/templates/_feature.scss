@@ -8,10 +8,6 @@
     background-position: center center;
     background-size: cover;
     padding: 100px 0;
-    @include tablet {
-  		  background-image: none !important;
-  		  background-color: #F2F2F2 !important;
-    }
 
     h2 {
         margin-bottom: 30px;
