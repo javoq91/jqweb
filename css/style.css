@@ -17,7 +17,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  /*
   font-size: 40px;
+  */
+  font-size: 40vw;
 }
 
 h2 {
@@ -626,7 +629,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 /*--
-	features-work Start 
+	features-work Start
 --*/
 #features-work {
   padding-top: 50px;
@@ -641,7 +644,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 }
 
 /*--
-	Header Start 
+	Header Start
 --*/
 header {
   background: #fff;
