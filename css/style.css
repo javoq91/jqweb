@@ -942,7 +942,8 @@ ul.dropdown-menu li {
 
 @media (max-width: 768px) {
   .slider .block h1 {
-    font-size: 32px;
+    /*font-size: 32px*/
+    font-size: 28px;
     line-height: 42px;
   }
 }
