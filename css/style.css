@@ -789,7 +789,7 @@ header .navbar-default .navbar-nav li a:hover {
 @media (max-width: 992px) {
   .navigation .navbar .dropdown-menu {
     text-align: center;
-    float: left !important;
+    float: center !important;
     width: 100%;
     margin: 0;
   }
