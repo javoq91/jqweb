@@ -915,7 +915,7 @@ ul.dropdown-menu li {
 
 @media (max-width: 992px) {
   .slider {
-    padding: 150px 0;
+    padding: 100px 0;
   }
 }
 
@@ -929,7 +929,7 @@ ul.dropdown-menu li {
   font-size: 45px;
   line-height: 60px;
   letter-spacing: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 50px;
   text-transform: uppercase;
 }
 
@@ -943,7 +943,7 @@ ul.dropdown-menu li {
 @media (max-width: 768px) {
   .slider .block h1 {
     /*font-size: 32px*/
-    font-size: 28px;
+    font-size: 27px;
     line-height: 42px;
   }
 }
